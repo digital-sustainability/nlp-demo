@@ -1,0 +1,27 @@
+:root {
+  --bfh-color-main: #4b647d;
+  --bg-color-dark: #0c0f19;
+}
+
+header {
+  display: flex;
+  border-bottom: solid 0.2rem var(--bfh-color-main);
+  padding-inline: 5rem;
+  padding-block: 0.5rem;
+}
+
+.title {
+  margin-left: 2rem;
+  font-family: UnitOT-Light;
+  color: var(--bfh-color-main);
+}
+
+.content {
+  padding-block: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-color-dark);
+  }
+}
