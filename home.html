@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      type="module"
+      src="https://gradio.s3-us-west-2.amazonaws.com/3.18.0/gradio.js"
+    ></script>
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/bfh-logo.png" alt="BFH Logo" />
+      <h2 class="circle">NLP Circle</h2>
+    </header>
+    <div class="content">
+      <h1 class="title">BFH IPST NLP Demo</h1>
+      <div class="Info">
+        (Anmerkung: Diese Seite ist noch in Entwicklung.) <br />
+        Sp&auml;testens seit der Ver&ouml;ffentlichung von ChatGPT geniessen
+        moderne Sprachmodelle grosse &ouml;ffentliche Aufmerksamkeit. Allerdings
+        ist es f&uuml;r nicht-Experten schwierig einzusch&auml;tzen, inwiefern
+        diese in ihrem Arbeitsumfeld eingesetzt werden k&ouml;nnten. Damit auch
+        sie sich ein Bild von M&ouml;glichkeiten und Limitierungen von grossen
+        Sprachmodellen machen k&ouml;nnen, haben wir diese interaktive Webseite
+        entwickelt. <br />
+        <br />
+        Grunds&auml;tzlich sind Sprachmodelle nichts als statistische Modelle,
+        welche die menschliche Sprache abbilden. Sie werden zun&auml;chst mit
+        sehr zahlreichen Texten auf gewisse, sehr allgemeine Aufgaben
+        "vortrainiert", wodurch sie die Grundstruktur der Sprache erlernen
+        k&ouml;nnen. <br />
+        <br />
+        Eine solche Aufgabe ist es zum Beispiel, das n&auml;chste Wort in einem
+        Text vorauszusagen. Um dies l&ouml;sen zu k&ouml;nnen, braucht ein
+        Modell einerseits ein Verst&auml;ndnis f&uuml;r Grammatik. Anderseits
+        muss es aber auch lernen, welche W&ouml;rter in einem Kontext gemeinsam
+        vorkommen, um stets das richtige Wort voraussagen zu k&ouml;nnen. Ein
+        Beispiel f&uuml;r ein solches Modell ist GPT-2, welches Sie in der
+        nachfolgenden Demo ausprobieren k&ouml;nnen. Die vortrainierten
+        Sprachmodelle haben also bereits ein Verst&auml;ndnis f&uuml;r Sprache
+        und eignen sich deshalb gut, um sie auf eine spezifische Aufgabe zu
+        spezialisieren (im Fachjargon wird dies "Finetuning" genannt).
+        M&ouml;gliche spezialisierte Aufgaben sind: <br />
+
+        <ul>
+          <li>Übersetzungen</li>
+          <li>
+            das Erkennen und Markieren von gewissen Konzepten im Text, sog.
+            Eigennamenerkennung oder Named Entity Recognition
+          </li>
+          <li>
+            Textklassifizierung, z.B.: Ist diese Mail eine Spam-Mail? Ist dieses
+            Feedback positiv?
+          </li>
+          <li>Text-Zusammenfassung</li>
+          <li>die Beantwortung von Fragen anhand eines Textes</li>
+        </ul>
+        <br />
+        <br />
+        Letztere zwei Beispiele k&ouml;nnen Sie in der Demo-App ausprobieren.
+        <br />
+        <br />
+        Die Qualit&auml;t des Sprachmodells h&auml;ngt stark von der Gr&ouml;sse
+        des Modells und des Datensatzes ab. W&auml;hrend die Technologien hinter
+        ChatGPT bereits weitestgehend bekannt waren, ist das einzige Geheimnis
+        hinter den verbl&uuml;ffenden Resultaten die Modellgr&ouml;sse: Das
+        Modell hat 175 Milliarden Parameter und wurde auf &uuml;ber 8 Milliarden
+        Textdokumenten trainiert. Dadurch konnte es ein so gutes
+        Verst&auml;ndnis f&uuml;r Sprache und das Erkennen von thematischen
+        Kontexten erlangen, dass man das Gef&uuml;hl hat, man interagiere mit
+        einem anderen Menschen. <br />
+        <br />
+        Die Demoseite wurde am
+        <a
+          href="https://www.bfh.ch/de/forschung/forschungsbereiche/public-sector-transformation/"
+          >Institut f&uuml;r Public Sector Transformation</a
+        >
+        der Berner Fachhochschule entwickelt.
+      </div>
+      <gradio-app src="https://joeldsl-nlp-circle-demo.hf.space"></gradio-app>
+    </div>
+    <footer></footer>
+  </body>
+</html>
