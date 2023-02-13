@@ -1,6 +1,11 @@
 :root {
+  --bfh-color-light: #82acd7;
   --bfh-color-main: #4b647d;
   --bg-color-dark: #0c0f19;
+}
+
+body {
+  color: var(--bfh-color-main);
 }
 
 header {
@@ -10,18 +15,36 @@ header {
   padding-block: 0.5rem;
 }
 
-.title {
+a {
+  text-decoration: none;
+  color: var(--bfh-color-main);
+}
+
+.circle {
   margin-left: 2rem;
   font-family: UnitOT-Light;
   color: var(--bfh-color-main);
+}
+
+.title {
+  text-align: center;
 }
 
 .content {
   padding-block: 2rem;
 }
 
+.Info {
+  padding-inline: 6rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--bg-color-dark);
+    color: white;
+  }
+
+  a {
+    color: var(--bfh-color-light);
   }
 }
